@@ -1,0 +1,95 @@
+.table-container {
+  width: 100%;
+  max-width: 1100px;
+  margin: 0 auto;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  border-radius: 10px;
+  background-color: #fff;
+  overflow-x: hidden;
+  margin-top: 30px;
+}
+
+/* Estilos para la tabla */
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 0;
+}
+
+thead {
+  background-color: #f8f8f8;
+}
+
+th,
+td {
+  text-align: left;
+  padding: 12px 15px;
+  border-bottom: 1px solid #ddd;
+  font-size: 15px;
+}
+
+th {
+  background-color: #4CAF50;
+  color: white;
+}
+
+tbody tr:nth-child(even) {
+  background-color: #f2f2f2;
+}
+
+img {
+  border-radius: 50%;
+  object-fit: cover;
+  width: 50px;
+  height: 50px;
+}
+
+/* Estilos el mensaje de error*/
+.error {
+  color: rgb(202, 1, 1);
+  font-size: 16px;
+  padding: 10px;
+  border-radius: 5px;
+  background-color: rgb(253, 228, 228);
+  width: 100%;
+  text-align: center;
+  margin: 0 auto;
+}
+
+
+/* Estilos responsivos */
+@media (max-width: 768px) {
+  .table-container {
+    overflow-x: auto;
+    /* Permite el desplazamiento horizontal solo en pantallas pequeñas */
+  }
+
+  th,
+  td {
+    font-size: 12px;
+    padding: 10px;
+  }
+
+  img {
+    width: 40px;
+    height: 40px;
+  }
+}
+
+@media (max-width: 480px) {
+  table {
+    overflow-x: auto;
+    white-space: nowrap;
+  }
+
+  th,
+  td {
+    font-size: 10px;
+    padding: 8px;
+  }
+
+  img {
+    width: 30px;
+    height: 30px;
+  }
+}
